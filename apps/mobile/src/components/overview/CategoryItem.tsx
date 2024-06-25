@@ -50,7 +50,7 @@ const CategoryItem = ({ name, icon, items, style, kind }: CategoryItemProps) => 
 				</Text>
 				{items !== undefined && (
 					<Text numberOfLines={1} style={tw`text-center text-xs text-ink-faint`}>
-						{formatNumber(items)} Item{(items > 1 || items === 0) && 's'}
+						{Number(items)} Item{(items > 1 || items === 0) && 's'}
 					</Text>
 				)}
 			</View>
